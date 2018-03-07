@@ -15,7 +15,6 @@ export class HomePage {
     this.restoProvider.getRestos().subscribe((restos) => {
       console.log("RESTOS: " + restos)
       this.restos = restos;
-      
     });
   }
 

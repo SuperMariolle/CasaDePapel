@@ -1,32 +1,71 @@
+.nav-bottom-border {
+    background: linear-gradient(to right, red, orange, yellow);
+    height: 5px;
+}
 
-.card-background-page {
+#home{
+    background-color:color($colors, secondary);
+}
 
-    background-color: #bba9a3;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.icon{
     text-align: center;
+}
 
-    ion-card {
-      position: relative;
-      text-align: center;
+.icon img{
+    width: 75px;
+}
+
+.sub_title {
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    background-color:color($colors, primary);
+}
+
+.custom-border {
+    background: linear-gradient(to right, red, orange, yellow);
+    height: 1px;
+}
+
+#resto_list img {
+    width: 100%;
+}
+.item-md.item-block .item-inner {
+    padding: 0px;
+    border: none;
+}
+
+.list_pictures {
+    padding-left: 0;
+    margin-top: 0px;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    background-image: url("../../assets/imgs/la_pignata.jpg");
+}
+
+.pres_img {
+    -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.main-content {
+    max-width: 400px;
+    margin: auto;
+}
+
+.list-item {
+    width:100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-content {
+        max-width:60%;
     }
-  
-    .card-title {
-      position: absolute;
-      top: 36%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-    }
-  
-    .card-subtitle {
-      font-size: 1.0em;
-      position: absolute;
-      top: 60%;
-      width: 100%;
-      color: #fff;
-    }
-  
-  }
+}
+
+

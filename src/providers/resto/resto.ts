@@ -36,7 +36,18 @@ export class RestoProvider {
       mail:'lagiraffe@hotmail.com',
       noon_opening:'9h30 - 10h30',
       evening_opening: '17h00 - 18h45',
-      image_name: 'brasserie_joia.jpg'
+      image_name: 'la_pignata.jpg'
+     },
+     {
+      name:'Le galinacé',
+      description:'Un galinacé de compétition',
+      phone:'048454541',
+      address:'Rue de la giraffe, 78',
+      facebook_link:'http://facebook.com/LaGiraffe',
+      mail:'lagiraffe@hotmail.com',
+      noon_opening:'9h30 - 10h30',
+      evening_opening: '17h00 - 18h45',
+      image_name: 'la_trattoria.jpg'
      }] ;
   }
 

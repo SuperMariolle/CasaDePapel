@@ -1,29 +1,43 @@
-<ion-content class="card-background-page">
-<ion-grid>
-  <ion-row col-12>
-    <ion-col text-center>
-        Restaurants Ferrara
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-        <ion-img align-items-center col-3 src="../../assets/imgs/logo_detail.png" ></ion-img>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col text-center>
-        Choisissez votre restaurant
-    </ion-col>
-  </ion-row>
-</ion-grid>
+<ion-header>
+  <ion-navbar >
+    <ion-title>Infinity</ion-title>
+    <div class="nav-bottom-border"></div>
+  </ion-navbar>
+</ion-header>
+<ion-content id="home">
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <div class="icon"><img src="../../assets/imgs/logo-mat.png"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 
+  <!-- <div class="main-content">
+    <div class="sub_title">
+      <p>Choisissez votre restaurant</p>
+    </div>
+    <ul></ul>
+    <ion-list>
+      <ion-item *ngFor="let resto of restos" class="list-item">
+
+      </ion-item>
+    </ion-list>
+  </div> -->
 
   
-    <ion-card *ngFor="let resto of restos">
-        <img class="pres_img" src="{{'../assets/imgs/'+ resto.image_name}}"/>
-        <div class="card-title shadowed">{{resto.name}}</div>
-        <div class="card-subtitle shadowed">{{resto.phone}}</div>
-    </ion-card>
+  <div class="main-content">
+      <div class="sub_title">
+        <p>Choisissez votre restaurant</p>
+      </div>
+      <ul class="list_pictures">
+        <li *ngFor="let resto of restos" class="list-item">
+            <img class="pres_img" src="{{'../assets/imgs/'+ resto.image_name}}"/>
+            
+        </li>
+      </ul>
+  </div>
   
   
  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->

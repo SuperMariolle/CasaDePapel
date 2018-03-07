@@ -14,11 +14,25 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-@font-face {
-    font-family: Raleway-Light;
-    src: url("../assets/fonts/Raleway-Light.ttf") format("ttf");
-    font-weight: 200
+
+
+
+@font-face{
+    font-family: Raleway;
+    src: url('../assets/fonts/great-vibes.woff2');
+    //src: url('../assets/fonts/raleway-light.ttf');
 }
-body {
-    font-family: 'Raleway-Light' !important;
+
+*{
+    font-family: Raleway;
 }
+
+.navbar-style {
+    border-bottom: 5px color($colors, secondary) solid;
+}
+
+a, span, p {
+    font-size: 30px;
+    margin-bottom: 0px;margin-top: 0px;
+}
+
